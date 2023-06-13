@@ -2,7 +2,7 @@
 ![4TierAppArchitecture!](https://github.com/awanmbandi/aws-real-world-projects/blob/four-tier-mailing-app-project/prod-env-project-architecture.png)
 
 ## 
-In this runbook, we will implement the PHP Mailing deployment with multi-tier architecture on AWS. We will be using the Amazon EC2 service on AWS for Webservers and Appservers. For the Mysql database, we will use the RDS service. We'll also see how to connect the Webserver to the Appservers and the Appservers with the Database to achieve a multi-tier application architecture deployment.
+In this (runbook)[https://youtube.com/playlist?list=PLEaTuekVZwppkn-u0VpMX-HsZE2f2oyoc], we will implement the PHP Mailing deployment with multi-tier architecture on AWS. We will be using the Amazon EC2 service on AWS for Webservers and Appservers. For the Mysql database, we will use the RDS service. We'll also see how to connect the Webserver to the Appservers and the Appservers with the Database to achieve a multi-tier application architecture deployment.
 
 ## STEP 1: Create The Base Networking Infrastructure For NAT/ELB, Webservers, Appservers and Database
 ### A) Create The VPC Network
