@@ -1,4 +1,4 @@
 4-Tier Architecture on AWS with the PHP Application!
 
 
-[prod-env-project-architecture](https://github.com/victorwokili/AWS-Advanced/assets/18079443/9aaded76-97bf-4cc5-9fb1-0d10140e6001)
+https://github.com/victorwokili/AWS-Advanced/assets/18079443/9aaded76-97bf-4cc5-9fb1-0d10140e6001
