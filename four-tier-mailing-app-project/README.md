@@ -23,34 +23,34 @@ In this [runbook](https://youtube.com/playlist?list=PLEaTuekVZwppkn-u0VpMX-HsZE2
 ### B) Create The Webserver Subnet 1 and 2
 1. Webserver Subnet 1
 - Name: `Prod-Webserver-Subnet-1`
-- CidirBlock: `10.0.15.0`
+- CidirBlock: `10.0.15.0/28`
 - Availability Zone: `us-west-1a`
 
 2. Webserver Subnet 2
 - Name: `Prod-Webserver-Subnet-2`
-- CidirBlock: `10.0.20.0`
+- CidirBlock: `10.0.20.0/28`
 - Availability Zone: `us-west-1c`
 
 ### C) Create The Appserver Subnet 1 and 2
 1. Appserver Subnet 1
 - Name: `Prod-Appserver-Subnet-1`
-- CidirBlock: `10.0.25.0`
+- CidirBlock: `10.0.25.0/28`
 - Availability Zone: `us-west-1a`
 
 2. Appserver Subnet 2
 - Name: `Prod-Appserver-Subnet-2`
-- CidirBlock: `10.0.30.0`
+- CidirBlock: `10.0.30.0/28`
 - Availability Zone: `us-west-1c`
 
 ### D) Create The Database Subnet 1 and 2
 1. Database Subnet 1
 - Name: `Prod-db-Subnet-1`
-- CidirBlock: `10.0.35.0`
+- CidirBlock: `10.0.35.0/28`
 - Availability Zone: `us-west-1a`
 
 2. Database Subnet 2
 - Name: `Prod-db-Subnet-2`
-- CidirBlock: `10.0.40.0`
+- CidirBlock: `10.0.40.0/28`
 - Availability Zone: `us-west-1c`
 
 ## STEP 2: Create 4 Public Route Rable and 4 Private Route Tables (Because of NAT Redundancy Implementation)
