@@ -24,15 +24,11 @@ What you will gain expertise in:<br>
 ✅ Implementing an Auto Scaling Group for dynamic resource allocation.<br>
 
 Join me on this journey to harness the full potential of AWS and become proficient in hosting dynamic web applications with confidence. Let's get started!
+---
 
 
 
-### Architectural Diagram:
-![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/f89005e4-7a21-415e-bfd2-abca0973f113)
-![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/b9660fab-0f9b-48e6-aee5-4ab3fa3753c7)
-
-
-
+# STEP BY STEP HANDS ON GUIDE
 Click on the Links Below to go to each process
 
 ##  [01 - BUILDING A 3 TIER AWS NETWORK VPC From Scratch](Host-a-Dynamic-Web-Application-on-AWS/01-build-a-3-Tier-AWS-Network-VPC-from-Scratch/Readme.md)
@@ -41,5 +37,23 @@ Shows you how to build a VPC Architecture from Scratch
 
 
 ##  [02 - Create an AWS NAT Gateway and Security Groups](Host-a-Dynamic-Web-Application-on-AWS/02-Create-a-NAT-Gateway-and-SG/Readme.md)
+#### AWS NAT Gateway Benefits
+1. **Secure Internet Access**: Enables private subnet instances to safely access the internet.
+2. **Scalability**: Automatically scales bandwidth, providing reliable internet connectivity.
+3. **High Availability**: Managed by AWS, ensuring consistent availability in each Availability Zone.
+4. **IP Conservation**: Multiple instances share a single public IP for internet access.
 
-Shows you how to build a VPC Architecture from Scratch
+#### AWS Security Groups Benefits
+1. **Instance-Level Security**: Acts as a virtual firewall for individual instances.
+2. **Stateful Filtering**: Automatically allows return traffic for approved inbound connections.
+3. **Customizable Rules**: Users can specify allowed or denied traffic types.
+4. **Dynamic Management**: Rules can be updated on-the-fly, affecting all associated instances.
+
+
+
+
+<br><br><br>
+### Architectural Diagram:
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/f89005e4-7a21-415e-bfd2-abca0973f113)
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/b9660fab-0f9b-48e6-aee5-4ab3fa3753c7)
+
