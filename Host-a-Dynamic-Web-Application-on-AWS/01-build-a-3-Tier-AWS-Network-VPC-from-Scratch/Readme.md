@@ -2,7 +2,7 @@
 
 <!-- no toc -->
   - [Barebone Network Architecture](#barebone-network-architecture)
-    - [Public Subnet (Tier 1)](#Public-Subnet-(Tier-1))
+    - [Public Subnet (Tier 1)](#public-subnet-tier-1)
     - [Virtual Machines](#virtual-machines)
     - [Containers](#containers)
     - [Tradeoffs](#tradeoffs)
