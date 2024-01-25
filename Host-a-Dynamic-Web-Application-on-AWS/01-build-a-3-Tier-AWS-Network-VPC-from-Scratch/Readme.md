@@ -5,6 +5,10 @@
     - [Public Subnet (Tier 1)](#public-subnet-tier-1)
     - [Private App Subnet (Tier 2)](#private-app-subnet-tier-2)
     - [Private App Subnet (Tier 3)](#private-app-subnet-tier-3)
+   - [FAQs](#FAQS)
+    - [Use of Enabling DNS Hostname for a VPC](#Use-of-Enabling-DNS-Hostname-for-a-VPC)
+    - [Private App Subnet (Tier 2)](#private-app-subnet-tier-2)
+    - [Private App Subnet (Tier 3)](#private-app-subnet-tier-3)
   - [History of virtualization](#history-of-virtualization)
     
 
@@ -126,6 +130,9 @@ you would see the DNS hostnames option say `disabled` <br>
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/c4e5aa84-2078-4890-915c-70452dbf5ac9) <br>
 
 
+
+
+
 ### Create Public Subnet in the 1st and second availability zone 
 <br> ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/7b1acde9-a334-4813-8d40-8d8d522ab5cd) <br>
 
@@ -177,7 +184,7 @@ This would let any EC2 instance intiated in the subnets to be automatically assi
 31. Click on `Save`
 32. Do the same above for the other subnet
 
-### Create a Route Table
+### Create a Public Route Table
 According to the [Architecture Diagram](https://github.com/victorwokili/AWS-Advanced/assets/18079443/b6eafba8-f1bc-43a2-a37a-a709c0d5e5d9), we will be creating a Public Route Table and Main Route Table
 
 #### Public Route Table
@@ -220,36 +227,86 @@ According to the [Architecture Diagram](https://github.com/victorwokili/AWS-Adva
     - Ensure both subnets are now associated <br>
     ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/7c6822a9-6944-47e9-93fe-a8dfad5ae225) <br>
 
+
+
+
+
+
+
     
-
-39. x
-40. x
-41. f
-42. f
-43. f
-44. f
-45. f
-46. f
-47. f
-48. f
-49. f
-50. f
-51. f
-52. f
-53. f
-54. f
-55. f
-56. f
-57. f
-58. f
-59. f
-60. 
+### Create 4 Private Subnets in the 1st and second availability zone 
+According to the [Architecture Diagram](https://github.com/victorwokili/AWS-Advanced/assets/18079443/b6eafba8-f1bc-43a2-a37a-a709c0d5e5d9), we will be creating 4 private subnets
 
 
+39. On the left side of the column, select `Subnets`
+40. Click `Create Subnet`
+41. Select the VPC - `Dev VPC`
+42. Input Variables for Public Subnet A (Subnet 1 of 4):
+    - Subnet name: `Private App Subnet AZ1`
+    - Availability Zone: `us-east-1a`
+    - IPv4 VPC CIDR block: `10.0.0.0/16`
+    - IPv4 subnet CIDR block: `10.0.2.0/24`
+    - Tags: Leave as is <br>
+
+
+43. Under the same setting click `Add new subnet` located at the bottom  <br>
+
+
+44.  Input Variables for Public Subnet B (Subnet 2 of 2):
+    - Subnet name: `Private App Subnet AZ2`
+    - Availability Zone: `us-east-1b`
+    - IPv4 VPC CIDR block: `10.0.0.0/16`
+    - IPv4 subnet CIDR block: `10.0.3.0/24`
+    - Tags: Leave as is  <br>
+
+45. Under the same setting click `Add new subnet` located at the bottom  <br>
+
+
+46.  Input Variables for Public Subnet B (Subnet 2 of 2):
+    - Subnet name: `Private Data Subnet AZ1`
+    - Availability Zone: `us-east-1a`
+    - IPv4 VPC CIDR block: `10.0.0.0/16`
+    - IPv4 subnet CIDR block: `10.0.4.0/24`
+    - Tags: Leave as is  <br>
+
+47. Under the same setting click `Add new subnet` located at the bottom  <br>
+
+
+48.  Input Variables for Public Subnet B (Subnet 2 of 2):
+    - Subnet name: `Private Data Subnet AZ2`
+    - Availability Zone: `us-east-1b`
+    - IPv4 VPC CIDR block: `10.0.0.0/16`
+    - IPv4 subnet CIDR block: `10.0.5.0/24`
+    - Tags: Leave as is  <br>
+
+
+49. Click `Create Subnet` <br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/1dabc86b-b269-4f60-8067-eb8b5db769cb) <br>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
 
 
 # FAQS:
@@ -273,8 +330,40 @@ Enabling the DNS hostname option for a Virtual Private Cloud (VPC) in a cloud co
 
 In summary, enabling DNS hostname for a VPC in a cloud environment enhances the usability, manageability, and compatibility of your infrastructure by allowing instances to have human-readable domain names and facilitating hostname resolution within the VPC. It simplifies resource management and communication, making it a valuable configuration option for VPCs.
 
+<br><br>
+## The difference between Public and Private Subnets
+
+### 1. Public Subnet
+- **Internet Access**: A public subnet in AWS is connected to an internet gateway, allowing outbound traffic to the internet.
+- **Inbound Access**: Resources with public IP or Elastic IP addresses in the public subnet can be accessed from the internet, if allowed by security groups and ACLs.
+- **Use Case**: Ideal for resources needing internet access, like web servers and load balancers.
+
+### 2. Private Subnet
+- **Limited Internet Access**: A private subnet does not have a direct route to the internet gateway.
+- **Inbound Access**: Resources in a private subnet are not directly accessible from the internet, enhancing security.
+- **Use Case**: Suitable for sensitive resources like databases and backend systems.
+- **Internet Access via NAT**: Uses NAT gateway or instance in a public subnet for outbound internet access, without allowing inbound connections.
+
+#### Summary
+Public subnets allow both inbound and outbound internet traffic, whereas private subnets are isolated from direct internet access for enhanced security.
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/a8e6c87f-f62c-4fe9-8d41-1592becc808d)
 
 
+<br><br>
+## AWS Main Route Table and Private Subnets
 
+### 1. Main Route Table
+- **Default Route Table**: Automatically applies to all VPC subnets.
+- **Controls Routing**: Manages internal VPC traffic.
+- **No Internet Access**: By default, does not allow internet connectivity.
 
+### 2. Subnets Without Explicit Associations
+- **Automatic Usage**: These subnets default to the main route table.
+- **Private Subnets**: Generally, they lack direct internet access due to main route table rules.
+
+### 3. Functioning
+- **Internet Access**: Private subnets using the main route table cannot directly access the internet.
+- **Custom Route Table**: Required for internet access, usually involving a NAT Gateway.
+
+**Summary**: The main route table is the default for AWS VPC subnets, particularly private ones, unless explicitly overridden. governing internal traffic and restricting direct internet access.
 
