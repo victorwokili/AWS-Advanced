@@ -54,14 +54,40 @@ The following will be created to enable recources have access to the internet:
 <br>
 ## Using the AWS Console to Create a VPC
 
-### Select the Region
+
 Always follow the guidance setup from the architectural design <br>
 This particular diagram gives us the information for the region where the VPC should be created
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/7f7e139b-c8d6-4193-a9c5-a5cc75edbb76)
 
+### Steps:
 1. Select the Region on the AWS Console
-    - US East(N. Virginia) us-east-1
-2. 
+    - US East (N. Virginia) us-east-1
+2. Go to the VPC AWS Service
+3. Click on `Create VPC`
+4. x
+5. x
+6. x
+7. x
+8. x
+9. x
+10. x
+11. x
+12. x
+13. x
+14. x
+15. x
+16. x
+17. x
+18. x
+19. x
+20. x
+21. x
+22. x
+23. x
+24. x
+25. x
+26. x
+27. 
 
 
 
