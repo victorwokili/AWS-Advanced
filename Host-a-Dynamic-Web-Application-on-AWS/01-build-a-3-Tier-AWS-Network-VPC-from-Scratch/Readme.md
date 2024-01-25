@@ -3,9 +3,8 @@
 <!-- no toc -->
   - [Barebone Network Architecture](#barebone-network-architecture)
     - [Public Subnet (Tier 1)](#public-subnet-tier-1)
-    - [Virtual Machines](#virtual-machines)
-    - [Containers](#containers)
-    - [Tradeoffs](#tradeoffs)
+    - [Private App Subnet (Tier 2)](#private-app-subnet-tier-2)
+    - [Private App Subnet (Tier 3)](#private-app-subnet-tier-3)
   - [History of virtualization](#history-of-virtualization)
     
 
@@ -34,18 +33,23 @@ This Private subnet would hold our webservers which are reosurces such as:
 - EC2 instances <br>
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/8fd76031-01c9-41d8-8269-4785b8efdbfe)
 
-### Private Data Subnet (Tier 2) 
+### Private Data Subnet (Tier 3) 
 This Private subnet would hold our database which are reosurces such as:
 - EC2 instances <br>
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/39369809-81dc-43c8-aee2-29a168c52184)
 
 
 ---
+**The subnets would be duplicated about multiple availability zones for high availability and fault tolerance** <br>
 
-![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/e12bf658-b320-4f81-baa7-d57ceecfae64)
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/e12bf658-b320-4f81-baa7-d57ceecfae64) <br>
 
-The subnets would be duplicated about multiple availability zones for high availability and fault tolerance
 
+
+---
+The following will be created to enable recources have access to the internet:
+- Internet Gateway
+- Route Tables
 
 
 
