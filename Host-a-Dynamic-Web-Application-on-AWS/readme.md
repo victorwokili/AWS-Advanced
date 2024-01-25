@@ -36,7 +36,7 @@ Click on the Links Below to go to each process
 Shows you how to build a VPC Architecture from Scratch
 
 
-##  [02 - Create an AWS NAT Gateway and Security Groups](Host-a-Dynamic-Web-Application-on-AWS/02-Create-a-NAT-Gateway-and-SG/Readme.md)
+##  [02 - Create an AWS NAT Gateway and Security Groups](02-Create-a-NAT-Gateway-and-SG/Readme.md)
 #### AWS NAT Gateway Benefits
 1. **Secure Internet Access**: Enables private subnet instances to safely access the internet.
 2. **Scalability**: Automatically scales bandwidth, providing reliable internet connectivity.
