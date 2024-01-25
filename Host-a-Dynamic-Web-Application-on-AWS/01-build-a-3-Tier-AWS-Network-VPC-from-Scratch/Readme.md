@@ -17,8 +17,7 @@
     - [Use of Enabling DNS Hostname for a VPC](#Use-of-Enabling-DNS-Hostname-for-a-VPC)
     - [The difference between Public and Private Subnets](#the-difference-between-public-and-private-subnets)
     - [AWS Main Route Table and Private Subnets](#aws-main-route-table-and-private-subnets)
-    - [Private App Subnet (Tier 3)](#private-app-subnet-tier-3)
-  - [History of virtualization](#history-of-virtualization)
+
     
 
 ---
@@ -317,7 +316,7 @@ According to the [Architecture Diagram](https://github.com/victorwokili/AWS-Adva
 
 ---
 
-
+<br><br><br><br><br>
 # FAQS:
 ## Use of Enabling DNS Hostname for a VPC
 
