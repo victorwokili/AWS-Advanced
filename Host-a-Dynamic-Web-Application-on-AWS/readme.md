@@ -40,3 +40,6 @@ Click on the Links Below to go to each process
 Shows you how to build a VPC Architecture from Scratch
 
 
+##  [02 - Create an AWS NAT Gateway and Security Groups](Host-a-Dynamic-Web-Application-on-AWS/02-Create-a-NAT-Gateway-and-SG/Readme.md)
+
+Shows you how to build a VPC Architecture from Scratch
