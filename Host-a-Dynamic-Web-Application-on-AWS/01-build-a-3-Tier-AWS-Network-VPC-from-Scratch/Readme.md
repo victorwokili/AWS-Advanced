@@ -209,7 +209,19 @@ According to the [Architecture Diagram](https://github.com/victorwokili/AWS-Adva
 
 
 
-38. x
+38. Associate both subnets to the public route table
+    - Select `subnet associations`
+    - Under **Explicit Subnet Associations** , click `Edit subnet associations` <br>
+      ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/2db7d838-364a-49f9-929b-0686e6c97c95) <br>
+
+    - Select both subnets ✅
+    - Click `Save Associations` <br>
+    ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/9ca68f0b-9b3b-47eb-bd12-e93d9d4d4b12) <br>
+    - Ensure both subnets are now associated <br>
+    ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/7c6822a9-6944-47e9-93fe-a8dfad5ae225) <br>
+
+    
+
 39. x
 40. x
 41. f
