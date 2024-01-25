@@ -29,3 +29,4 @@ Join me on this journey to harness the full potential of AWS and become proficie
 
 ## Architectural Diagram:
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/f89005e4-7a21-415e-bfd2-abca0973f113)
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/b9660fab-0f9b-48e6-aee5-4ab3fa3753c7)
