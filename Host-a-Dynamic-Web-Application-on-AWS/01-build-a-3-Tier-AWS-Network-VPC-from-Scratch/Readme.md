@@ -49,9 +49,9 @@ This Private subnet would hold our database which are reosurces such as:
 ---
 The following will be created to enable recources have access to the internet:
 - Internet Gateway
-- Route Tables<
+- Route Tables
 ---
-br>
+<br>
 ## Using the AWS Console to Create a VPC
 
 ### Select the Region
