@@ -87,6 +87,7 @@ This particular diagram gives us the information for the region where the VPC sh
 <br>
 
 ### Enable DNS Hostnames for VPC:
+See the [FAQs](#use-of-enabling-dns-hostname-for-a-vpc) below to know why this is important <br> 
 9. Select the `Dev VPC` by the VPC ID under Your VPCs
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/e067353b-6bda-46a7-acc2-16f167e391f5) <br>
 you would see the DNS hostnames option say `disabled` <br>
@@ -119,6 +120,34 @@ you would see the DNS hostnames option say `disabled` <br>
 25. x
 26. x
 27. 
+
+
+
+
+
+
+
+
+# FAQS:
+## Use of Enabling DNS Hostname for a VPC
+
+Enabling the DNS hostname option for a Virtual Private Cloud (VPC) in a cloud computing environment like Amazon Web Services (AWS) serves an important purpose. When you enable the DNS hostname for a VPC, it allows instances within that VPC to have fully qualified domain names (FQDNs) assigned to them. Here's why enabling DNS hostname is useful:
+
+1. **User-Friendly Naming:** Enabling DNS hostname makes it easier to identify and communicate with instances within the VPC. Instead of relying solely on IP addresses, you can use human-readable domain names to access and manage resources.
+
+2. **Hostname Resolution:** It enables the VPC's built-in Domain Name System (DNS) resolver to resolve the DNS names of instances to their respective private IP addresses. This means you can refer to instances by name rather than remembering or looking up their IP addresses.
+
+3. **Service Discovery:** DNS hostname enables better service discovery within the VPC. If you have multiple services running on different instances, they can communicate with each other using DNS names, simplifying the configuration.
+
+4. **Compatibility:** Enabling DNS hostname ensures compatibility with AWS services and features that rely on DNS resolution. For example, it is essential for services like Amazon RDS (Relational Database Service) to resolve DNS names for instances.
+
+5. **Security Groups and Network ACLs:** When working with security groups and network access control lists (ACLs), you can refer to instances by their DNS names in the rules. This allows you to control access to resources more intuitively.
+
+6. **Ease of Management:** Managing resources using DNS names can be more convenient than managing them solely by IP addresses, especially as your infrastructure scales.
+
+7. **Dynamic IP Assignment:** In situations where IP addresses of instances change dynamically (e.g., with auto-scaling), DNS hostnames provide a stable and consistent way to access these instances.
+
+In summary, enabling DNS hostname for a VPC in a cloud environment enhances the usability, manageability, and compatibility of your infrastructure by allowing instances to have human-readable domain names and facilitating hostname resolution within the VPC. It simplifies resource management and communication, making it a valuable configuration option for VPCs.
 
 
 
