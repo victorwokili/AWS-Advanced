@@ -24,3 +24,8 @@ What you will gain expertise in:<br>
 ✅ Implementing an Auto Scaling Group for dynamic resource allocation.<br>
 
 Join me on this journey to harness the full potential of AWS and become proficient in hosting dynamic web applications with confidence. Let's get started!
+
+
+
+## Architectural Diagram:
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/f89005e4-7a21-415e-bfd2-abca0973f113)
