@@ -49,7 +49,22 @@ This Private subnet would hold our database which are reosurces such as:
 ---
 The following will be created to enable recources have access to the internet:
 - Internet Gateway
-- Route Tables
+- Route Tables<
+---
+br>
+## Using the AWS Console to Create a VPC
+
+### Select the Region
+Always follow the guidance setup from the architectural design <br>
+This particular diagram gives us the information for the region where the VPC should be created
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/7f7e139b-c8d6-4193-a9c5-a5cc75edbb76)
+
+1. Select the Region on the AWS Console
+    - US East(N. Virginia) us-east-1
+2. 
+
+
+
 
 
 
