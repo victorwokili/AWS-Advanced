@@ -104,22 +104,134 @@ you would see the DNS hostnames option say `disabled` <br>
 12. Double check to make sure DNS hostname now says `Enabled` <br>
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/b415a3bf-9447-4e13-9fee-0dd1e7b06654)
 
+### Create an Internet Gateway and attach it to the VPC
 
-13. x
-14. x
-15. x
-16. x
-17. x
-18. x
-19. x
-20. x
-21. x
-22. x
-23. x
-24. x
-25. x
-26. x
-27. 
+13. On the left side of the column, select `Internet Gateways`
+14. Click `Create internet gateway`
+15. Give the IGW a name
+    - `Dev Internet Gateway`
+16. Click on `Create Internet Gateway` <br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/9f5da0f8-ecc4-420b-91ef-f8057ebf2690)
+<br>
+
+
+17. Attach the IGW to the VPC
+    - Click on `Actions`
+    - Click on `Attach to VPC` <br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/63cd3901-d6d5-492f-9f6a-1410d9d5a404) <br>
+    - Select the `Dev VPC`
+    - Click `Attach Internet Gateway` <br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/5feb43a7-6ccd-4144-a099-117f485e2bd3) <br>
+    -Verify the State of the Internet Gateway is `Attached` and the VPC ID is corresponding to `Dev VPC` <br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/c4e5aa84-2078-4890-915c-70452dbf5ac9) <br>
+
+
+### Create Public Subnet in the 1st and second availability zone 
+<br> ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/7b1acde9-a334-4813-8d40-8d8d522ab5cd) <br>
+
+
+18. On the left side of the column, select `Subnets`
+19. To prevent information overload, feel free to filter the attributes by VPC <br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/c970691f-b30c-40b6-94c4-2a78cc929c7d) <br>
+
+20. Click `Create Subnet`
+21. Select the VPC - `Dev VPC`
+22. Input Variables for Public Subnet A (Subnet 1 of 2):
+    - Subnet name: `Public Subnet AZ1`
+    - Availability Zone: `us-east-1a`
+    - IPv4 VPC CIDR block: `10.0.0.0/16`
+    - IPv4 subnet CIDR block: `10.0.0.0/24`
+    - Tags: Leave as is <br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/f4ef1a5a-35cd-40e8-a2aa-ec15f233edc1) <br>
+
+
+23. Under the same setting click `Add new subnet` located at the bottom  <br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/06326811-e977-47cf-95c3-630d12ca866a)  <br>
+
+
+24.  Input Variables for Public Subnet B (Subnet 2 of 2):
+    - Subnet name: `Public Subnet AZ2`
+    - Availability Zone: `us-east-1b`
+    - IPv4 VPC CIDR block: `10.0.0.0/16`
+    - IPv4 subnet CIDR block: `10.0.1.0/24`
+    - Tags: Leave as is  <br>
+
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/e9e93968-e8bb-4b02-a3b2-cba797f96581) <br>
+
+
+26. Click `Create Subnet`
+
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/14fd2e0c-d81c-44a6-92c5-0d75fae77a56)
+
+### Enable the auto assign IP settings for the public subnets
+This would let any EC2 instance intiated in the subnets to be automatically assigned a public IPv4 address. 
+
+27. Click on the subnet ID  (only one example shown here, do the same for the other by yourself)
+28. Click on `Actions` <br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/31d54d81-8538-453b-a7ba-03e649233f85) <br>
+
+29. Click on `Edit subnet settings` <br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/cdcc210b-8082-4825-9a7a-6a3adfbcfe0f) <br>
+
+30. Click on `Enable auto-assign public IPv4 address`
+31. Click on `Save`
+32. Do the same above for the other subnet
+
+### Create a Route Table
+According to the [Architecture Diagram](https://github.com/victorwokili/AWS-Advanced/assets/18079443/b6eafba8-f1bc-43a2-a37a-a709c0d5e5d9), we will be creating a Public Route Table and Main Route Table
+
+#### Public Route Table
+33. On the left side of the column, select `Route tables`
+    - The route tables are still filtered by VPC, you will see a RT in the VPC which was created when creating the VPC. This is called the **Main Route Table** and it is **Private by default**. <br>
+    ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/8aba7c43-7a7d-4df9-a314-da1e98d8c66e) <br>
+
+34. Click on `Create route table`
+35. Input Variables :
+    - Name: `Public Route Table`
+    - VPC: `us-east-1b`
+36. Click on `Create route table` <br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/1fae8180-b928-4531-a97c-66f78f4f67ad) <br>
+
+
+37. Add a public route to the Route Table
+    - In the Route Table Section, Select `Public Route Table` and Click on `Routes` 
+    - Click on Edit Routes <br>
+    ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/5e7bd4f6-ba70-49ff-8962-270f28d8ffc1) <br>
+
+    - Click on add route
+    - Input Variables:
+        -  Destination: `0.0.0.0./0`
+        - Target: `Dev internet Gateway`
+    - Click on `Save Changes` <br>
+  ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/65035ddb-67cf-41f8-8064-3fa063e2bac8) <br>
+    -Verify the new route <br>
+    ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/0041a226-9711-424e-a1f6-1ead61ae77dd) <br>
+
+
+
+38. x
+39. x
+40. x
+41. f
+42. f
+43. f
+44. f
+45. f
+46. f
+47. f
+48. f
+49. f
+50. f
+51. f
+52. f
+53. f
+54. f
+55. f
+56. f
+57. f
+58. f
+59. f
+60. 
 
 
 
