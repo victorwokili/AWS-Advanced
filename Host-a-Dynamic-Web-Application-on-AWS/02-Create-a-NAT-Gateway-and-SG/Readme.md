@@ -2,11 +2,8 @@
 
 <!-- no toc -->
   - [Network Architecture with NAT Gateway](#Network Architecture with NAT Gateway)
-    - [Public Subnet (Tier 1)](#public-subnet-tier-1)
-    - [Private App Subnet (Tier 2)](#private-app-subnet-tier-2)
-    - [Private App Subnet (Tier 3)](#private-app-subnet-tier-3)
-  - [Using the AWS Console to Create a VPC](#using-the-aws-console-to-create-a-vpc)
-    - [Create a VPC](#create-a-vpc)
+  - [Using the AWS Console to Create the NAT Gateways](#Using the AWS Console to Create the NAT Gateways)
+    - [Create NAT Gateway AZ1](#Create NAT Gateway AZ1)
     - [Enable DNS Hostnames for VPC](#enable-dns-hostnames-for-vpc)
     - [Create an Internet Gateway and attach it to the VPC](#create-an-internet-gateway-and-attach-it-to-the-vpc)
     - [Create Public Subnet in the 1st and second availability zone](#create-public-subnet-in-the-1st-and-second-availability-zone)
@@ -60,7 +57,7 @@ all internet traffic is routed through the internet gateway as seen below
 
 Always follow the guidance setup from the architectural design <br>
 <br><br>
-### Create NAT Gateway AZ1:
+### Create NAT Gateway AZ1
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `NAT Gateways`
 3. Click `Create NAT gateway`
@@ -74,7 +71,7 @@ Always follow the guidance setup from the architectural design <br>
 
 
 <br><br>
-### Create NAT Gateway AZ2:
+### Create NAT Gateway AZ2
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `NAT Gateways`
 3. Click `Create NAT gateway`
@@ -89,7 +86,7 @@ Always follow the guidance setup from the architectural design <br>
 
 ---
 <br><br>
-### Create Private Route Table AZ1:
+### Create Private Route Table AZ1
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Route Tables`
 3. Click `Create Route Table`
@@ -101,7 +98,7 @@ Always follow the guidance setup from the architectural design <br>
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/5a65c725-972c-4f08-818d-6804d174e746)
 
 <br><br>
-### Add a route to Private Route Table AZ1:
+### Add a route to Private Route Table AZ1
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Route Tables`
 3. Click on `Private Route Table AZ1`
@@ -116,7 +113,7 @@ Always follow the guidance setup from the architectural design <br>
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/7042e889-0faf-4245-ba9b-08dce6c66297)
 
 <br><br>
-### Associate Private Route Table AZ1 to Private App Subnet AZ1 and Private Data Subnet AZ1:
+### Associate Private Route Table AZ1 to Private App Subnet AZ1 and Private Data Subnet AZ1
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Route Tables`
 3. Click on `Private Route Table AZ1`
@@ -130,7 +127,7 @@ Always follow the guidance setup from the architectural design <br>
 
 ---
 <br><br>
-### Create Private Route Table AZ1:
+### Create Private Route Table AZ1
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Route Tables`
 3. Click `Create Route Table`
@@ -142,7 +139,7 @@ Always follow the guidance setup from the architectural design <br>
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/5a65c725-972c-4f08-818d-6804d174e746)
 
 <br><br>
-### Add a route to Private Route Table AZ1:
+### Add a route to Private Route Table AZ1
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Route Tables`
 3. Click on `Private Route Table AZ1`
@@ -157,7 +154,7 @@ Always follow the guidance setup from the architectural design <br>
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/7042e889-0faf-4245-ba9b-08dce6c66297)
 
 <br><br>
-### Associate Private Route Table AZ1 to Private App Subnet AZ1 and Private Data Subnet AZ1:
+### Associate Private Route Table AZ1 to Private App Subnet AZ1 and Private Data Subnet AZ1
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Route Tables`
 3. Click on `Private Route Table AZ1`
@@ -171,7 +168,7 @@ Always follow the guidance setup from the architectural design <br>
 
 ---
 <br><br>
-### Create Private Route Table AZ2:
+### Create Private Route Table AZ2
 2. Go to the VPC AWS Service
 2. On the left side of the column, select `Route Tables`
 3. Click `Create Route Table`
@@ -182,7 +179,7 @@ Always follow the guidance setup from the architectural design <br>
 5. Click on `Create route table`  <br><br>
 
 
-### Add a route to Private Route Table AZ2:
+### Add a route to Private Route Table AZ2
 2. Go to the VPC AWS Service
 2. On the left side of the column, select `Route Tables`
 3. Click on `Private Route Table AZ2`
@@ -196,7 +193,7 @@ Always follow the guidance setup from the architectural design <br>
 
 
 <br><br>
-### Associate Private Route Table AZ2 to Private App Subnet AZ2 and Private Data Subnet AZ2:
+### Associate Private Route Table AZ2 to Private App Subnet AZ2 and Private Data Subnet AZ2
 2. Go to the VPC AWS Service
 2. On the left side of the column, select `Route Tables`
 3. Click on `Private Route Table AZ2`
@@ -226,7 +223,7 @@ An AWS Security Group acts as a virtual firewall for instances in AWS, controlli
 ## Using the AWS Console to Create the NAT Gateways
 
 <br><br>
-### Create ALB Security Group:
+### Create ALB Security Group
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Security Groups` under Security
 3. Click `Create Security Group`
@@ -248,7 +245,7 @@ An AWS Security Group acts as a virtual firewall for instances in AWS, controlli
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/4cc4c361-f83e-4bf1-bdf1-cc88cf69af71)
 
 <br><br>
-### Create SSH Security Group:
+### Create SSH Security Group
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Security Groups` under Security
 3. Click `Create Security Group`
@@ -266,7 +263,7 @@ An AWS Security Group acts as a virtual firewall for instances in AWS, controlli
 5. Click on `Create security group`<br>
 
 <br><br>
-### Create Webserver Security Group:
+### Create Webserver Security Group
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Security Groups` under Security
 3. Click `Create Security Group`
@@ -294,7 +291,7 @@ An AWS Security Group acts as a virtual firewall for instances in AWS, controlli
 5. Click on `Create security group`<br>
 
 <br><br>
-### Create Database Security Group:
+### Create Database Security Group
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Security Groups` under Security
 3. Click `Create Security Group`
