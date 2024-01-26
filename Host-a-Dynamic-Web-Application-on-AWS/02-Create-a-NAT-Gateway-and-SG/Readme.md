@@ -5,16 +5,14 @@
   - [Using the AWS Console to Create the NAT Gateways](#using-the-aws-console-to-create-the-nat-gateways)
     - [Create NAT Gateway AZ1](#create-nat-gateway-az1)
     - [Create NAT Gateway AZ2](#create-nat-gateway-az2)
-    - [Add a route to Private Route Table AZ1](#add-a-route-to-private-route-table-az1)
-    - [Associate Private Route Table AZ1 to Private App Subnet AZ1 and Private Data Subnet AZ1](#associate-private-route-table-az1-to-private-app-subnet-az1-and-private-data-subnet-az1)
     - [Create Private Route Table AZ1](#create-private-route-table-az1)
-    - [Add a route to Private Route Table AZ1](#add-a-route-to-private-route-table-az1-1)
+    - [Add a route to Private Route Table AZ1](#add-a-route-to-private-route-table-az1)
     - [Associate Private Route Table AZ1 to Private App Subnet AZ1 and Private Data Subnet AZ1](#associate-private-route-table-az1-to-private-app-subnet-az1-and-private-data-subnet-az1-1)
     - [Create Private Route Table AZ2](#create-private-route-table-az2)
     - [Add a route to Private Route Table AZ2](#add-a-route-to-private-route-table-az2)
     - [Associate Private Route Table AZ2 to Private App Subnet AZ2 and Private Data Subnet AZ2](#associate-private-route-table-az2-to-private-app-subnet-az2-and-private-data-subnet-az2)
   - [Network Architecture with Security Group](#network-architecture-with-security-group)
-  - [Using the AWS Console to Create the NAT Gateways](#using-the-aws-console-to-create-the-nat-gateways-1)
+  - [Using the AWS Console to Create the NAT Gateways](#using-the-aws-console-to-create-the-nat-gateways)
     - [Create ALB Security Group](#create-alb-security-group)
     - [Create SSH Security Group](#create-ssh-security-group)
     - [Create Webserver Security Group](#create-webserver-security-group)
@@ -159,17 +157,6 @@ Always follow the guidance setup from the architectural design <br>
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/7042e889-0faf-4245-ba9b-08dce6c66297)
 
 <br><br>
-### Associate Private Route Table AZ1 to Private App Subnet AZ1 and Private Data Subnet AZ1
-1. Go to the VPC AWS Service
-2. On the left side of the column, select `Route Tables`
-3. Click on `Private Route Table AZ1`
-4. Click on `Subnet Associations`
-5. Click on `Edit Subnet Association` under Explicit subnet associations 
-6. Select:
-    - `Private App Subnet AZ1`
-    - `Private Data Subnet AZ1`
-8. Click on `Save Associations`
-![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/7042e889-0faf-4245-ba9b-08dce6c66297)
 
 ---
 <br><br>
