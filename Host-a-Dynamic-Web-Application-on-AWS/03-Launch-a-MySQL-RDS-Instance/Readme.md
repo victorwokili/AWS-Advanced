@@ -2,20 +2,11 @@
 
 
 <!-- no toc -->
-  - [Network Architecture with NAT Gateway](#network-architecture-with-nat-gateway)
-  - [Using the AWS Console to Create the NAT Gateways](#using-the-aws-console-to-create-the-nat-gateways)
-    - [Create NAT Gateway AZ1](#create-nat-gateway-az1)
-    - [Create NAT Gateway AZ2](#create-nat-gateway-az2)
-    - [Create Private Route Table AZ1](#create-private-route-table-az1)
-    - [Add a route to Private Route Table AZ1](#add-a-route-to-private-route-table-az1)
-    - [Create Private Route Table AZ2](#create-private-route-table-az2)
-    - [Add a route to Private Route Table AZ2](#add-a-route-to-private-route-table-az2)
-  - [Network Architecture with Security Group](#network-architecture-with-security-group)
-  - [Using the AWS Console to Create the NAT Gateways](#using-the-aws-console-to-create-the-nat-gateways)
-    - [Create ALB Security Group](#create-alb-security-group)
-    - [Create SSH Security Group](#create-ssh-security-group)
-    - [Create Webserver Security Group](#create-webserver-security-group)
-    - [Create Database Security Group](#create-database-security-group)
+- [Using the AWS Console to Create an RDS Instance](#using-the-aws-console-to-create-an-rds-instance)
+  - [Create RDS Subnet Group](#create-rds-subnet-group)
+  - [Create the RDS Database](#create-the-rds-database)
+
+
 
 Amazon RDS (Relational Database Service) is a managed database service by AWS that simplifies database setup, maintenance, and scaling in the cloud. It supports various relational database engines and offers automated tasks like backups, updates, and high availability for reliable and efficient database management.
 
@@ -40,7 +31,7 @@ Before creating the RDS instance, we would have to create a subnet group the sub
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/96fb8a14-4755-4d17-a86f-378013f46145)
 
 ---
-### Create RDS DB
+### Create the RDS Database
 1. Go to the **Amazon RDS** AWS Service
 2. On the left side of the column, select `Databases`
 3. Click `CreateDatabase`
