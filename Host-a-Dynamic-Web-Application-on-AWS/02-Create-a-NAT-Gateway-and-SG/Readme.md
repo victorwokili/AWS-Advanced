@@ -195,7 +195,7 @@ Always follow the guidance setup from the architectural design <br>
 8. Click on `Save changes` <br><br>
 
 
-
+<br><br>
 ### Associate Private Route Table AZ2 to Private App Subnet AZ2 and Private Data Subnet AZ2:
 2. Go to the VPC AWS Service
 2. On the left side of the column, select `Route Tables`
@@ -225,7 +225,7 @@ An AWS Security Group acts as a virtual firewall for instances in AWS, controlli
 
 ## Using the AWS Console to Create the NAT Gateways
 
-
+<br><br>
 ### Create ALB Security Group:
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Security Groups` under Security
@@ -247,6 +247,7 @@ An AWS Security Group acts as a virtual firewall for instances in AWS, controlli
 5. Click on `Create security group`<br>
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/4cc4c361-f83e-4bf1-bdf1-cc88cf69af71)
 
+<br><br>
 ### Create SSH Security Group:
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Security Groups` under Security
@@ -264,7 +265,7 @@ An AWS Security Group acts as a virtual firewall for instances in AWS, controlli
     - Tags: Leave as is 
 5. Click on `Create security group`<br>
 
-
+<br><br>
 ### Create Webserver Security Group:
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Security Groups` under Security
@@ -292,7 +293,7 @@ An AWS Security Group acts as a virtual firewall for instances in AWS, controlli
     - Tags: Leave as is 
 5. Click on `Create security group`<br>
 
-
+<br><br>
 ### Create Database Security Group:
 1. Go to the VPC AWS Service
 2. On the left side of the column, select `Security Groups` under Security
@@ -312,5 +313,4 @@ An AWS Security Group acts as a virtual firewall for instances in AWS, controlli
 
 
 ---
-<br>
 --- 
