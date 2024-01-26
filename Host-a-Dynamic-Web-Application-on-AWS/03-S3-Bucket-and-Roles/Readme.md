@@ -39,7 +39,7 @@ Before creating the RDS instance, we would have to create a subnet group the sub
 3. Input Variables:
     - Trusted entity type: `AWS service`
     - Use case: `EC2`
-    - Permissions policies `AmazonS3FullAccess`
+    - Permissions policies `AmazonS3FullAccess` <br>
       ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/70d5e044-2864-4cf2-a73f-5cefcbd091f4)
 5. Role name : `AWSS3-FullAccess-Role`
 6. Click on `Create role`
