@@ -207,47 +207,110 @@ Always follow the guidance setup from the architectural design <br>
     - `Private Data Subnet AZ2`
 8. Click on `Save Associations`
 
+
+
+
 ---
-
-
-
-
-
-
---- 
 <br>
-
-
-
-
-
-## Using the AWS Console to Create Security Groups
-
-Always follow the guidance setup from the architectural design <br>
-This particular diagram gives us the information for the region where the VPC should be created
-![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/7f7e139b-c8d6-4193-a9c5-a5cc75edbb76)
-
-### Create a VPC:
-1. Select the Region on the AWS Console
-   - `US East (N. Virginia) us-east-1`
-2. Go to the VPC AWS Service
-3. Click on `Create VPC`
-4. Give the VPC a Name
-    - `Dev VPC`
-
-5. Leave the CIDR Block on IPv4
-6. Enter the CIDR Block for Dev VPC
-    - `10.0.0.0/16`
-
-7. Leave the following settings as default
-    - IPv6 CIDR block `NO IPv6 CIDR block`
-    - Tenancy : `Default`
-
-8. Click on `Create VPC`
-
-![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/0025192c-242f-4f90-b9c5-c5486d66ae51)
-
-![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/03e251da-eb79-4ffb-9ab2-d93910d3efd2)
-
 --- 
+
+
+
+
+## Network Architecture with Security Group <br>  
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/c2b56228-64a8-4ff6-9e45-f81f1460ca64)
+
+
+An AWS Security Group acts as a virtual firewall for instances in AWS, controlling both inbound and outbound network traffic at the instance level. It defines rules specifying allowed and denied traffic based on IP addresses, protocols, and ports. Changes to rules are applied dynamically to all instances associated with the security group.
+
+## Using the AWS Console to Create the NAT Gateways
+
+
+### Create ALB Security Group:
+1. Go to the VPC AWS Service
+2. On the left side of the column, select `Security Groups` under Security
+3. Click `Create Security Group`
+4. Input Variables:
+    - Name: `ALB Security Group`
+    - Description: `ALB Security Group`
+    - VPC: `Dev VPC`
+    - Inbound Rules: Click on`Add rule`
+      - Allow HTTP:
+        - Click on the dropdown under **Type** and select `HTTP`
+        - Type `0.0.0.0/0` under the CIDR block info
+        - Click on `Add Rule`
+      - Allow HTTPS:
+        - Click on the dropdown under **Type** and select `HTTPS`
+        - Type `0.0.0.0/0` under the CIDR block info
+    - Outbound Rules: Leave as is
+    - Tags: Leave as is 
+5. Click on `Create security group`<br>
+![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/4cc4c361-f83e-4bf1-bdf1-cc88cf69af71)
+
+### Create SSH Security Group:
+1. Go to the VPC AWS Service
+2. On the left side of the column, select `Security Groups` under Security
+3. Click `Create Security Group`
+4. Input Variables:
+    - Name: `SSH Security Group`
+    - Description: `SSH Security Group`
+    - VPC: `Dev VPC`
+    - Inbound Rules: Click on`Add rule`
+      - Allow SSH:
+        - Click on the dropdown under **Type** and select `SSH`
+        - Under Source, Select `My IP`
+        - The CIDR block info should populate your IP
+    - Outbound Rules: Leave as is
+    - Tags: Leave as is 
+5. Click on `Create security group`<br>
+
+
+### Create Webserver Security Group:
+1. Go to the VPC AWS Service
+2. On the left side of the column, select `Security Groups` under Security
+3. Click `Create Security Group`
+4. Input Variables:
+    - Name: `Webserver Security Group`
+    - Description: `Webserver Security Group`
+    - VPC: `Dev VPC`
+    - Inbound Rules: Click on`Add rule`
+      - Allow HTTP:
+        - Click on the dropdown under **Type** and select `HTTP`
+        - Under Source, Select `Custom`
+        - Look for `ALB Security Group` under the CIDR block info
+        - Click on `Add Rule`
+      - Allow HTTPS:
+        - Click on the dropdown under **Type** and select `HTTPS`
+        - Under Source, Select `Custom`
+        - Look for `ALB Security Group` under the CIDR block info
+        - Click on `Add Rule`
+      - Allow SSH:
+        - Click on the dropdown under **Type** and select `SSH`
+        - Under Source, Select `Custom`
+        - Look for `SSH Security Group` under the CIDR block info
+    - Outbound Rules: Leave as is
+    - Tags: Leave as is 
+5. Click on `Create security group`<br>
+
+
+### Create Database Security Group:
+1. Go to the VPC AWS Service
+2. On the left side of the column, select `Security Groups` under Security
+3. Click `Create Security Group`
+4. Input Variables:
+    - Name: `Database Security Group`
+    - Description: `Database Security Group`
+    - VPC: `Dev VPC`
+    - Inbound Rules: Click on`Add rule`
+      - Allow SSH:
+        - Click on the dropdown under **Type** and select `MYSQL/Aurora`
+        - Under Source, Select `Custom`
+        - Look for `Webserver Security Group` under the CIDR block info
+    - Outbound Rules: Leave as is
+    - Tags: Leave as is 
+5. Click on `Create security group`<br>
+
+
+---
 <br>
+--- 
