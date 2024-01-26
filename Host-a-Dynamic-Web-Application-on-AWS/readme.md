@@ -50,8 +50,20 @@ Shows you how to build a VPC Architecture from Scratch
 4. **Dynamic Management**: Rules can be updated on-the-fly, affecting all associated instances.
 
 ##  [03 - Launch a MySQL RDS Instance](03-Launch-a-MySQL-RDS-Instance/Readme.md)
+You will need to create an RDS subnet group and RDS instance
 
 
+#### Creating an RDS subnet group and linking it to private subnets is done for:
+- **Security**: Creating an RDS subnet group and associating it with private subnets enhances security by isolating the instance from the public internet and controlling network access.
+
+- **Compliance**: This setup helps meet regulatory requirements by minimizing exposure to potential threats.
+
+- **Performance**: Placing the RDS instance in a private subnet improves network performance and resource management.
+
+- **High Availability**: In Multi-AZ deployments, RDS instances are located in private subnets to ensure database availability.
+
+
+##  [04 - Create S3 Bucket and Upload File + IAM Roles with S3 Policy](03-S3-Bucket-and-Roles/Readme.md)
 
 <br><br><br>
 ### Architectural Diagram:
