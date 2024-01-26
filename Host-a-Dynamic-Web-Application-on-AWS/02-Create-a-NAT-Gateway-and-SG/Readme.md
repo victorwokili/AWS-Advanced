@@ -1,21 +1,26 @@
 # 02 - Create an AWS NAT Gateway and Security Groups
 
 <!-- no toc -->
-  - [Network Architecture with NAT Gateway](#Network Architecture with NAT Gateway)
-  - [Using the AWS Console to Create the NAT Gateways](#Using the AWS Console to Create the NAT Gateways)
-    - [Create NAT Gateway AZ1](#Create NAT Gateway AZ1)
-    - [Enable DNS Hostnames for VPC](#enable-dns-hostnames-for-vpc)
-    - [Create an Internet Gateway and attach it to the VPC](#create-an-internet-gateway-and-attach-it-to-the-vpc)
-    - [Create Public Subnet in the 1st and second availability zone](#create-public-subnet-in-the-1st-and-second-availability-zone)
-    - [Enable the auto assign IP settings for the public subnets](#enable-the-auto-assign-ip-settings-for-the-public-subnets)
-    - [Create a Public Route Table](#create-a-public-route-table)
-    - [Create 4 Private Subnets in the 1st and second availability zone](#create-4-private-subnets-in-the-1st-and-second-availability-zone)
-  - [FAQs](#FAQS)
-    - [Use of Enabling DNS Hostname for a VPC](#Use-of-Enabling-DNS-Hostname-for-a-VPC)
-    - [The difference between Public and Private Subnets](#the-difference-between-public-and-private-subnets)
-    - [AWS Main Route Table and Private Subnets](#aws-main-route-table-and-private-subnets)
+  - [Network Architecture with NAT Gateway](#network-architecture-with-nat-gateway)
+  - [Using the AWS Console to Create the NAT Gateways](#using-the-aws-console-to-create-the-nat-gateways)
+    - [Create NAT Gateway AZ1](#create-nat-gateway-az1)
+    - [Create NAT Gateway AZ2](#create-nat-gateway-az2)
+    - [Add a route to Private Route Table AZ1](#add-a-route-to-private-route-table-az1)
+    - [Associate Private Route Table AZ1 to Private App Subnet AZ1 and Private Data Subnet AZ1](#associate-private-route-table-az1-to-private-app-subnet-az1-and-private-data-subnet-az1)
+    - [Create Private Route Table AZ1](#create-private-route-table-az1)
+    - [Add a route to Private Route Table AZ1](#add-a-route-to-private-route-table-az1-1)
+    - [Associate Private Route Table AZ1 to Private App Subnet AZ1 and Private Data Subnet AZ1](#associate-private-route-table-az1-to-private-app-subnet-az1-and-private-data-subnet-az1-1)
+    - [Create Private Route Table AZ2](#create-private-route-table-az2)
+    - [Add a route to Private Route Table AZ2](#add-a-route-to-private-route-table-az2)
+    - [Associate Private Route Table AZ2 to Private App Subnet AZ2 and Private Data Subnet AZ2](#associate-private-route-table-az2-to-private-app-subnet-az2-and-private-data-subnet-az2)
+  - [Network Architecture with Security Group](#network-architecture-with-security-group)
+  - [Using the AWS Console to Create the NAT Gateways](#using-the-aws-console-to-create-the-nat-gateways-1)
+    - [Create ALB Security Group](#create-alb-security-group)
+    - [Create SSH Security Group](#create-ssh-security-group)
+    - [Create Webserver Security Group](#create-webserver-security-group)
+    - [Create Database Security Group](#create-database-security-group)
 
-    
+
 
 ---
 
