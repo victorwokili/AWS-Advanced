@@ -12,6 +12,7 @@ Amazon RDS (Relational Database Service) is a managed database service by AWS th
 
 An RDS instance refers to a specific database environment created and managed within Amazon RDS (Relational Database Service). It represents a single, isolated database that can run one of the supported database engines (e.g., MySQL, PostgreSQL, Oracle, SQL Server). RDS instances can vary in size and capacity, depending on the chosen configuration, and they can be provisioned with different compute and storage resources to meet specific performance and storage requirements. Users can create, modify, and delete RDS instances to host their data, and RDS takes care of the underlying infrastructure and database management tasks.
 
+<br><br>
 ---
 ## Using the AWS Console to Create an RDS Instance
 Before creating the RDS instance, we would have to create a subnet group the subnet group allows us to specify which subnet we want to create the RDS instances in
@@ -30,6 +31,7 @@ Before creating the RDS instance, we would have to create a subnet group the sub
 5. Click on `Create`
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/96fb8a14-4755-4d17-a86f-378013f46145)
 
+<br><br>
 ---
 ### Create the RDS Database
 1. Go to the **Amazon RDS** AWS Service
