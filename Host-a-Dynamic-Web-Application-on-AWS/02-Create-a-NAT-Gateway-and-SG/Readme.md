@@ -206,7 +206,8 @@ Always follow the guidance setup from the architectural design <br>
 
 
 
-## Network Architecture with Security Group <br>  
+## Network Architecture with Security Group 
+<br>  
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/c2b56228-64a8-4ff6-9e45-f81f1460ca64)
 
 
