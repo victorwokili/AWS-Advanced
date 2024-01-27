@@ -2,9 +2,10 @@
 
 
 <!-- no toc -->
-- [Using the AWS Console to Create an S3 Instance](#using-the-aws-console-to-create-an-s3-instance)
-  - [Create RDS Subnet Group](#create-rds-subnet-group)
-- [Create an IAM Role with S3 Permissions Policy](#create-an-iam-role-with-s3-permissions-policy)
+- [Using the AWS Console to Setup an EC2 Instance](#using-the-aws-console-to-setup-an-ec2-instance)
+  - [Create a Key Pair](#create-a-key-pair)
+  - [Launch an EC2 Instance in the Public Subnet](#launch-an-ec2-instance-in-the-public-subnet)
+
 
 
 
@@ -12,7 +13,7 @@
 
 ---
 
-## Using the AWS Console to Create a Key Pair
+## Using the AWS Console to Setup an EC2 Instance 
 We will be creating a key pair that will be used to SSH into the EC2 instance.
 
 ### Create a Key Pair
@@ -29,6 +30,7 @@ We will be creating a key pair that will be used to SSH into the EC2 instance.
 
 <br><br>
 ![Alt text](arch_diagram.png)
+
 ### Launch an EC2 Instance instance in the Public Subnet
 
 The setup server will be used for 2 things: <br>
