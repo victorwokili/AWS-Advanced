@@ -63,7 +63,7 @@ You will need to create an RDS subnet group and RDS instance
 - **High Availability**: In Multi-AZ deployments, RDS instances are located in private subnets to ensure database availability.
 
 
-##  [04 - Create S3 Bucket and Upload File + IAM Roles with S3 Policy](03-S3-Bucket-and-Roles/Readme.md)
+##  [04 - Create S3 Bucket and Upload File + IAM Roles with S3 Policy](04-S3-Bucket-and-Roles/Readme.md)
 
 <br><br><br>
 ### Architectural Diagram:
