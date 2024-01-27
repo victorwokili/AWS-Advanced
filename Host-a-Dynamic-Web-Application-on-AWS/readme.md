@@ -65,6 +65,9 @@ You will need to create an RDS subnet group and RDS instance
 
 ##  [04 - Create S3 Bucket and Upload File + IAM Roles with S3 Policy](04-S3-Bucket-and-Roles/Readme.md)
 
+
+## [05 - Create a Key Pair and Setup an EC2 Instance](05-Create-a-KeyPair-and-Setup-an-EC2-Instance.md)
+
 <br><br><br>
 ### Architectural Diagram:
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/f89005e4-7a21-415e-bfd2-abca0973f113)
