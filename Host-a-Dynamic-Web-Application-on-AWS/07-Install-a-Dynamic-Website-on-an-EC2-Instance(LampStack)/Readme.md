@@ -1,13 +1,8 @@
-# 06 - Install and Setup MYSQL Workbench
+# 07 - Install a Dynamic Website on an EC2 Instance (Lamp Stack)
 
 
 <!-- no toc -->
-- [Installing MySQL Workbench](#installing-mysql-workbench)
-  - [Download and Install MySQL Workbench](#download-and-install-mysql-workbench)
-  - [Setup the information for RDS and EC2](#setup-the-information-for-rds-and-ec2)
-  - [Use MySQL Workbench to Import Data into an RDS Database](#use-mysql-workbench-to-import-data-into-an-rds-database)
-  - [Import Data into the Database](#import-data-into-the-database)
-
+- [Setup the Server to Install and Configure the Website](#setup-the-server-to-install-and-configure-the-website)
 
 
 
@@ -16,12 +11,22 @@
 
 ---
 
-## Installing MYSQL Workbench 
+## Setup the Server to install and configure the website
 ![Image Alt text](image.png)
-We will be installing MySQL Workbench in our machine and using the Setup Server and MySQL workbench to import the data to our instances in the AWS Console.
-
+We will be using the setup server to install and configure the website.
 <br><br>
 
-### Download and Install MySQL Workbench
-1. [Install with Windows](https://www.youtube.com/watch?v=u96rVINbAUI)
-2. [Install with Mac OS X](https://www.youtube.com/watch?v=sY_QPWiIeDQ&pp=ygUbaW5zdGFsbCBteXNxbCB3b3JrYmVuY2ggbWFj)
+
+1. Go to the **EC2** AWS Service
+2. in the keft had menu, under **Instances** click `Instances`
+3. Select `Setup Server`
+4. Click on **Details** and copy the public IPv4 address 
+5. SSH into the `Setup Server`
+  - ```bash
+    ssh -i "virginia.pem" ec2-user@3.86.42.24
+    ```
+
+6. Run the commands from the [install-rent-zone-ec2-commands.txt](install-rent-zone-ec2-commands.txt) file in this folder chronologically.
+7. Copy the Public IPv4 address of the EC2 instance `Setup Server` - `3.86.42.24`
+8. Paste it in you web browser, you should have access to the car rental website.
+
