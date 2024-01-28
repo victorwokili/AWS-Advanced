@@ -71,6 +71,8 @@ You will need to create an RDS subnet group and RDS instance
 
 ## [06 - Install and Setup MYSQL Workbench](06-Install-and-Setup-MYSQL-Workbench/Readme.md)
 
+
+## [Install a Dynamic Website on an EC2 Instance (Lamp Stack)](07-Install-a-Dynamic-Website-on-an-EC2-Instance(LampStack)/Readme.md)
 <br><br><br>
 ### Architectural Diagram:
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/f89005e4-7a21-415e-bfd2-abca0973f113)
