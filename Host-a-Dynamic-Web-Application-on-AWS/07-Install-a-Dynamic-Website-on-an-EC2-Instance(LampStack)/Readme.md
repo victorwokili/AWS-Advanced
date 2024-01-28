@@ -17,7 +17,7 @@
 ---
 
 ## Installing MYSQL Workbench 
-![Alt text](07-Install-a-Dynamic-Website-on-an-EC2-Instance(LampStack)/images/image.png)
+![Image Alt text](/images/image.png)
 We will be installing MySQL Workbench in our machine and using the Setup Server and MySQL workbench to import the data to our instances in the AWS Console.
 
 <br><br>
