@@ -107,7 +107,6 @@ This would route traffic to the target group
         - us-east-1b 
           - Public Subnet AZ2
     - Security groups: 
-      - 
       - Security groups: `ALB Security Group`
     - Listeners and routing:
       - Default action: `Dev-TG` 
