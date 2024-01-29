@@ -80,6 +80,17 @@ We will be using the setup server to install and configure the website. An AMI w
 ## [08 - Create an Application Load Balancer and Target Group](08-Create-an-Application-Load-Balancer-and-Target-Group/Readme.md)
 The AMI that was created in the last lecture will be used to create an EC2 instance in the Private App Subnets as a `Webserver`. The EC2 instance will already have the website installed in it. To access the website , We will also create a Target Group and add the EC2 instance into the Target group , and then create an ALB to route traffic to the target group. THis is how users will access the website.
 
+By the end of this section, you will be able to access the website through the DNS domain name.
+
+
+## [09 - Register a New Domain Name in Route 53](09-Register-a-New-Domain-Name-in-Route-53/Readme.md)
+This will allow our end users to access our website using the domain name instead of the ALB domain name.
+
+We will:    
+    - Register a new domain name to replace the load balancer domain name. (HTTP)
+    - Register an SSL Certificate to make the website secure. (HTTPS)
+
+
 
 <br><br><br>
 ### Architectural Diagram:
