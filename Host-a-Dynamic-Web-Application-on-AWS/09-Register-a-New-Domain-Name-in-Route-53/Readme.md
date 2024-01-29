@@ -137,6 +137,7 @@ At this point the communication between the website and web browser is not secur
 5. Click `Add` 
 6. Ensure you have 2 listeners on the ALB, both should be forwaring traffic to the targert group
 
+<br><br>
 ---
 ### Redirect HTTP traffic to HTTPS (Port 80 to Port 443)
 
