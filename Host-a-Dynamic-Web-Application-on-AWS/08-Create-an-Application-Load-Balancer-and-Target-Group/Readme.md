@@ -28,7 +28,7 @@
 ---
 
 ## Using the AWS Console to Setup the website on the Private App Subnet
----
+
 ### Stop the Setup Server from the Public Subnet
 
 We have accomplished what we need to do with the setup server. We can stop the server.
