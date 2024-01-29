@@ -70,7 +70,7 @@
 
 
 ![Alt text](image-1.png)
-<br>
+<br><br>
 
 ---
 
@@ -103,7 +103,7 @@ We will be:
 10. Refresh the webpage until the status says `Issued`
 
 
-<br> ![Alt text](image-2.png) <br>
+<br> ![Alt text](image-2.png) <br> <br>
 
 
 
@@ -111,10 +111,9 @@ We will be:
 
 
 
+---
 
 ## Secure the Website 
-
-<br> 
 
 ### Add Listner to the ALB and attach the ACM SSL Certificate
 We will be:
@@ -138,8 +137,8 @@ At this point the communication between the website and web browser is not secur
 5. Click `Add` 
 6. Ensure you have 2 listeners on the ALB, both should be forwaring traffic to the targert group
 
-
-## Redirect HTTP traffic to HTTPS (Port 80 to Port 443)
+---
+### Redirect HTTP traffic to HTTPS (Port 80 to Port 443)
 
 1. Go to the **EC2** AWS Service
 2. Under **Load Balacing** console, click `Load Balancers`
