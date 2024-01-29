@@ -73,9 +73,12 @@ You will need to create an RDS subnet group and RDS instance
 
 
 ## [07 - Install a Dynamic Website on an EC2 Instance (Lamp Stack)](07-Install-a-Dynamic-Website-on-an-EC2-Instance(LampStack)/Readme.md)
-We will be using the setup server to install and configure the website.
+We will be using the setup server to install and configure the website. An AMI will also be created to get an image for the webserver instance.
 
 
+
+## [08 - Create an Application Load Balancer and Target Group](08-Create-an-Application-Load-Balancer-and-Target-Group/Readme.md)
+The AMI that was created in the last lecture will be used to create an EC2 instance in the Private App Subnets as a `Webserver`. The EC2 instance will already have the website installed in it. To access the website , We will also create a Target Group and add the EC2 instance into the Target group , and then create an ALB to route traffic to the target group. THis is how users will access the website.
 
 
 <br><br><br>
