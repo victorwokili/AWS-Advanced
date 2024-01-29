@@ -40,8 +40,10 @@ We have accomplished what we need to do with the setup server. We can stop the s
 3. Select `Setup Server`
 4. Click on **Instance state** and select `Stop Instance` 
 
----
 <br>
+
+---
+
 
 ### Launch an EC2 instance in the private subnet
 
@@ -66,8 +68,10 @@ The Web server will be used for: <br>
 5. Review the Summary 
 6. Click `Launch instance`
 
----
 <br>
+
+---
+
 
 ### Create a Target Group
 1. Go to the **EC2** AWS Service
@@ -92,9 +96,10 @@ The Web server will be used for: <br>
 
 
 
+<br>
 
 ---
-<br>
+
 
 ### Create an Application Load Balancer
 This would route traffic to the target group
