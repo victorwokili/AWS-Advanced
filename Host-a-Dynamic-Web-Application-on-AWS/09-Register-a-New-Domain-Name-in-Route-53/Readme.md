@@ -139,6 +139,7 @@ At this point the communication between the website and web browser is not secur
 
 <br><br>
 ---
+
 ### Redirect HTTP traffic to HTTPS (Port 80 to Port 443)
 
 1. Go to the **EC2** AWS Service
