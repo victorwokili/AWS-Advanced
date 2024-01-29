@@ -41,7 +41,10 @@ We have accomplished what we need to do with the setup server. We can stop the s
 4. Click on **Instance state** and select `Stop Instance` 
 
 ---
+<br>
+
 ### Launch an EC2 instance in the private subnet
+
 The Web server will be used for: <br>
   - Running the Website <br><br>
 1. Go to the **EC2** AWS Service
@@ -64,6 +67,8 @@ The Web server will be used for: <br>
 6. Click `Launch instance`
 
 ---
+<br>
+
 ### Create a Target Group
 1. Go to the **EC2** AWS Service
 2. in the left hnad menu, under **Load Balancing** click `Target Group`
@@ -89,6 +94,8 @@ The Web server will be used for: <br>
 
 
 ---
+<br>
+
 ### Create an Application Load Balancer
 This would route traffic to the target group
 1. Go to the **EC2** AWS Service
