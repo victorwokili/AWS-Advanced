@@ -157,8 +157,10 @@ At this point the communication between the website and web browser is not secur
 6. Go back to **Listeners and rules** for `Dev-ALB`, ensure it looks like the image below. (It should be forwaridn traffic)
 ![Alt text](image-3.png)
 7. Go to the website and you would it is now secure, but the website looks funky. This will be fixed in the next section.
+<br>
+<br>
 
-
+![Alt text](image-4.png)
 
 
 
