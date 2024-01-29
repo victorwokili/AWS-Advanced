@@ -40,6 +40,7 @@
     - in the left hand menu, click `Dashboard`
 <br>
 
+
 ---
 
 
@@ -127,7 +128,7 @@ At this point the communication between the website and web browser is not secur
 2. Under **Load Balacing** console, click `Load Balancers`
 3. Select the `Dev-ALB` checkbox ✅
 4. Under **Load balancer: Dev-ALB** , then under **Listeners and rules** click `Add listner` 
-5.Input Variables:
+5. Input Variables:
     - Protocol : Port: `HTTPS:443`
     - Default actions -> Routing actions : `Redirect` 
     - Target group: `Dev-TG`
