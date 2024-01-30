@@ -85,12 +85,19 @@ By the end of this section, you will be able to access the website through the D
 
 ## [09 - Register a New Domain Name in Route 53](09-Register-a-New-Domain-Name-in-Route-53/Readme.md)
 This will allow our end users to access our website using the domain name instead of the ALB domain name.
-
 We will:    
     - Register a new domain name to replace the load balancer domain name. (HTTP)
     - Register an SSL Certificate to make the website secure. (HTTPS)
+
+
+## [10 - SSH Into an EC2 Instance in the Private Subnet](10-SSH-Into-an-EC2-Instance-in-the-Private-Subnet/Readme.md)
+
+We will:
     - Login to the Web Server with the bastion host using Agent Forwarding.
     
+
+
+## [11 - Create an Auto Scaling Group](11-Create-an-Auto-Scaling-Group/Readme.md)
 
 
 
