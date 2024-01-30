@@ -93,7 +93,8 @@ We will:
 ## [10 - SSH Into an EC2 Instance in the Private Subnet](10-SSH-Into-an-EC2-Instance-in-the-Private-Subnet/Readme.md)
 
 We will:
-    - Login to the Web Server with the bastion host using Agent Forwarding.
+
+- Login to the Web Server with the bastion host using Agent Forwarding.
     
 
 
