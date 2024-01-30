@@ -15,6 +15,7 @@ Get-Service ssh-agent
 ```
 
 # Now load your key files into the ssh-agent
+rememeber to edit the location of your key file
 ```powershell
 ssh-add C:\Users\Admin\my-ec2key.pem
 ```
