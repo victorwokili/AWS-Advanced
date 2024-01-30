@@ -56,7 +56,7 @@ Agent forwarding allows you to use your local SSH key to securely connect from y
 ssh-agent for windows allows for a seamless ssh connection. 
 1. If using windows:
     - open powershell as an administrator
-    - use the commands located in the file, [SSH-into-instance-in-the-private-subnet-windows.md](#SSH-into-instance-in-the-private-subnet-windows.md)  to load the `KeyPair` into the SSH agent.
+    - use the commands located in the file, [SSH-into-instance-in-the-private-subnet-windows.md](https://github.com/victorwokili/AWS-Advanced/blob/main/Host-a-Dynamic-Web-Application-on-AWS/10-SSH-Into-an-EC2-Instance-in-the-Private-Subnet/SSH-into-instance-in-the-private-subnet-windows.md)  to load the `KeyPair` into the SSH agent.
     you should get this image <br>
     ![Alt text](image-1.png) <br>
     - exit out of powershell
@@ -65,7 +65,7 @@ ssh-agent for windows allows for a seamless ssh connection.
 
 2. If using a mac:
     - open terminal
-    - use the commands located in the file, [SSH-into-instance-in-the-private-subnet-mac.md](#SSH-into-instance-in-the-private-subnet-mac.md)  to load the `KeyPair` into the SSH agent.
+    - use the commands located in the file, [SSH-into-instance-in-the-private-subnet-mac.md](https://github.com/victorwokili/AWS-Advanced/blob/main/Host-a-Dynamic-Web-Application-on-AWS/10-SSH-Into-an-EC2-Instance-in-the-Private-Subnet/SSH-into-instance-in-the-private-subnet-mac.md)  to load the `KeyPair` into the SSH agent.
    - you should get this image <br>
     <br>
    - go to step 3
