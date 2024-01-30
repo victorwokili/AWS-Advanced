@@ -89,6 +89,8 @@ This will allow our end users to access our website using the domain name instea
 We will:    
     - Register a new domain name to replace the load balancer domain name. (HTTP)
     - Register an SSL Certificate to make the website secure. (HTTPS)
+    - Login to the Web Server with the bastion host using Agent Forwarding.
+    
 
 
 

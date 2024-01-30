@@ -3,7 +3,7 @@
 
 <!-- no toc -->
 - [Setup the Server to Install and Configure the Website](#setup-the-server-to-install-and-configure-the-website)
-- [Install an AMI](#Install-an-AMI)
+- [Create a new AMI](#create-a-new-ami)
 
 
 
@@ -33,7 +33,7 @@ We will be using the setup server to install and configure the website.
 8. Paste it in you web browser, you should have access to the car rental website.
 
 
-## Install an AMI
+## Create a new AMI
 ![Alt text](image-1.png)
 
 Once we have installed and configured our website, we will use the EC2 instance we installed our website on to create an AMI. Then we can use the AMI to launch new EC2 instances with our website already configured on them.
