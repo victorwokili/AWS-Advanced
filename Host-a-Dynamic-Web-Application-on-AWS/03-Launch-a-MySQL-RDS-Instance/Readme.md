@@ -61,7 +61,7 @@ For the sake of simplicity and cost we would leave it in Single DB, Multi-AZ DB 
       - Select `Database Security Group`
    - Availability Zone: `us-east-1b` , this is where the master DB instance resides on the diagram
    - Database authentication: `Password authentication`
-   - Additional configuration: expand
-     -Initial database name: `applicationdb`
+   - Additional configuration: expand 
+      - Initial database name: `applicationdb`
 5. Click on `Create Database`
 ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/96fb8a14-4755-4d17-a86f-378013f46145)
