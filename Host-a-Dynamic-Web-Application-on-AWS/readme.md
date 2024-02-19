@@ -70,7 +70,7 @@ You will need to create an RDS subnet group and RDS instance
 
 
 ## [06 - Install and Setup MYSQL Workbench](06-Install-and-Setup-MYSQL-Workbench/Readme.md)
-SSH tunneling with an EC2 instance establishes a secure connection to Amazon RDS, providing:
+SSH tunneling with an EC2 instance and MySQL Workbench establishes a secure connection to Amazon RDS, providing:
 
 - **Security:** Encrypts data transmission.
 - **Flexibility:** Bypasses restrictions and allows control over access.
