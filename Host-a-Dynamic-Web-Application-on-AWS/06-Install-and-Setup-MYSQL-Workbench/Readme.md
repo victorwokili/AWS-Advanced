@@ -67,8 +67,11 @@ to the SQL data for our application into the SQL database.
     - MySQL Hostname: `YOURS-IS-DIFFERENT.us-east-1.rds.amazonaws.com` 
         - Go to the RDS Management Console Tab 
         - Under `dev-rds-db` , click **Connectivity & security** and under **Endpoint & port** select the value from Endpoint. 
-        <br>
-        ![Alt text](image-2.png) <Br> 
+       
+        ![Alt text](image-2.png)
+   
+
+
     - MySQL Server Port: `3306`
     - Username: Type in your DB username, mine is `admin`
         - Go to the **Configuration** section
