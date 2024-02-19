@@ -45,10 +45,19 @@ to the SQL data for our application into the SQL database.
 2. Go to the **EC2** AWS Service
 3. On the Left side of the screen, under **Instances** click `Instances`
 3. Check ✅ the box by `Setup Server` to see it's **Details**
-4. Right click on the AWS LOGO by the top left corner of the screen, and click `Open Link in New Tab`
-5. In the new tab,go to the **Amazon RDS** AWS Service
-6. On the left side of the column, select `Databases`
-7. Click `dev-rds-db` 
+   - QUICK TIP, TO AVOID ANY CONNECTION ISSUES, WHILE HERE:
+      - Click on Actions
+      - Click on Networking
+      - Click on Connect RDS database
+      - Choose the RDS Database
+      - Click Connect
+        ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/1f5300d8-2bb8-4c98-b307-88f5484150a6)
+
+
+5. Right click on the AWS LOGO by the top left corner of the screen, and click `Open Link in New Tab`
+6. In the new tab,go to the **Amazon RDS** AWS Service
+7. On the left side of the column, select `Databases`
+8. Click `dev-rds-db` 
 
 ---
 
