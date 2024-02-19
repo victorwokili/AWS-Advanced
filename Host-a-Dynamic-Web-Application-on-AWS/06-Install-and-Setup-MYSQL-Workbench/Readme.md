@@ -20,6 +20,16 @@
 ![Alt text](image.png)
 We will be installing MySQL Workbench in our machine and using the Setup Server and MySQL workbench to import the data to our instances in the AWS Console.
 
+SSH tunneling with an EC2 instance is a method used to establish a secure connection between a local machine and an Amazon RDS instance. It provides:
+
+1. **Security:** Data transmission is encrypted, reducing the risk of interception.
+2. **Firewall Bypass:** Helps bypass restrictions on RDS instance access.
+3. **Internet Access:** Allows RDS instances without direct internet access to connect.
+4. **Flexibility:** Offers control over access and security policies through EC2 instance management.
+
+In essence, SSH tunneling with an EC2 instance acts as a secure bridge, ensuring encrypted and secure communication while providing flexibility in managing access and security.
+
+
 <br><br>
 
 ### Download and Install MySQL Workbench
