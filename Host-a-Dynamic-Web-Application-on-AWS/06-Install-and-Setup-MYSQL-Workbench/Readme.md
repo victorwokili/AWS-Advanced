@@ -78,7 +78,8 @@ to the SQL data for our application into the SQL database.
         - Click `Store in Vault` or `Store in Keychain`
         - Type in your DB password, mine is `****👀****`
         - Click `OK`
-    ![Alt text](image-3.png)
+    ![image](https://github.com/victorwokili/AWS-Advanced/assets/18079443/37f2cc8b-9172-413c-ba49-cf254c36108a)
+
 4. You will get either of 2 things:
     - Error like below
         - Go to the `SSH Security Group` 
