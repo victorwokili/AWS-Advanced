@@ -31,7 +31,7 @@ Join me on this journey to harness the full potential of AWS and become proficie
 # STEP BY STEP HANDS ON GUIDE
 Click on the Links Below to go to each process
 
-##  [01 - BUILDING A 3 TIER AWS NETWORK VPC From Scratch](Host-a-Dynamic-Web-Application-on-AWS/01-build-a-3-Tier-AWS-Network-VPC-from-Scratch/Readme.md)
+##  [01 - BUILDING A 3 TIER AWS NETWORK VPC From Scratch](https://github.com/victorwokili/AWS-Advanced/tree/main/Host-a-Dynamic-Web-Application-on-AWS/01-build-a-3-Tier-AWS-Network-VPC-from-Scratch)
 
 Shows you how to build a VPC Architecture from Scratch
 
