@@ -49,7 +49,7 @@ Shows you how to build a VPC Architecture from Scratch
 3. **Customizable Rules**: Users can specify allowed or denied traffic types.
 4. **Dynamic Management**: Rules can be updated on-the-fly, affecting all associated instances.
 
-##  [03 - Launch a MySQL RDS Instance](03-Launch-a-MySQL-RDS-Instance/Readme.md)
+##  [03 - Launch a MySQL RDS Instance](https://github.com/victorwokili/AWS-Advanced/tree/main/Host-a-Dynamic-Web-Application-on-AWS/03-Launch-a-MySQL-RDS-Instance)
 You will need to create an RDS subnet group and RDS instance
 
 
@@ -63,38 +63,38 @@ You will need to create an RDS subnet group and RDS instance
 - **High Availability**: In Multi-AZ deployments, RDS instances are located in private subnets to ensure database availability.
 
 
-##  [04 - Create S3 Bucket and Upload File + IAM Roles with S3 Policy](04-S3-Bucket-and-Roles/Readme.md)
+##  [04 - Create S3 Bucket and Upload File + IAM Roles with S3 Policy](https://github.com/victorwokili/AWS-Advanced/tree/main/Host-a-Dynamic-Web-Application-on-AWS/04-S3-Bucket-and-Roles)
 
 
-## [05 - Create a Key Pair and Setup an EC2 Instance](05-Create-a-KeyPair-and-Setup-an-EC2-Instance/Readme.md)
+## [05 - Create a Key Pair and Setup an EC2 Instance](https://github.com/victorwokili/AWS-Advanced/tree/main/Host-a-Dynamic-Web-Application-on-AWS/05-Create-a-KeyPair-and-Setup-an-EC2-Instance)
 
 
-## [06 - Install and Setup MYSQL Workbench](06-Install-and-Setup-MYSQL-Workbench/Readme.md)
+## [06 - Install and Setup MYSQL Workbench](https://github.com/victorwokili/AWS-Advanced/tree/main/Host-a-Dynamic-Web-Application-on-AWS/06-Install-and-Setup-MYSQL-Workbench)
 SSH tunneling with an EC2 instance and MySQL Workbench establishes a secure connection to Amazon RDS, providing:
 
 - **Security:** Encrypts data transmission.
 - **Flexibility:** Bypasses restrictions and allows control over access.
 
 
-## [07 - Install a Dynamic Website on an EC2 Instance (Lamp Stack)](07-Install-a-Dynamic-Website-on-an-EC2-Instance(LampStack)/Readme.md)
+## [07 - Install a Dynamic Website on an EC2 Instance (Lamp Stack)](https://github.com/victorwokili/AWS-Advanced/tree/main/Host-a-Dynamic-Web-Application-on-AWS/07-Install-a-Dynamic-Website-on-an-EC2-Instance(LampStack))
 We will be using the setup server to install and configure the website. An AMI will also be created to get an image for the webserver instance.
 
 
 
-## [08 - Create an Application Load Balancer and Target Group](08-Create-an-Application-Load-Balancer-and-Target-Group/Readme.md)
+## [08 - Create an Application Load Balancer and Target Group](https://github.com/victorwokili/AWS-Advanced/tree/main/Host-a-Dynamic-Web-Application-on-AWS/08-Create-an-Application-Load-Balancer-and-Target-Group)
 The AMI that was created in the last lecture will be used to create an EC2 instance in the Private App Subnets as a `Webserver`. The EC2 instance will already have the website installed in it. To access the website , We will also create a Target Group and add the EC2 instance into the Target group , and then create an ALB to route traffic to the target group. THis is how users will access the website.
 
 By the end of this section, you will be able to access the website through the DNS domain name.
 
 
-## [09 - Register a New Domain Name in Route 53](09-Register-a-New-Domain-Name-in-Route-53/Readme.md)
+## [09 - Register a New Domain Name in Route 53](https://github.com/victorwokili/AWS-Advanced/tree/main/Host-a-Dynamic-Web-Application-on-AWS/09-Register-a-New-Domain-Name-in-Route-53)
 This will allow our end users to access our website using the domain name instead of the ALB domain name.
 We will:    
     - Register a new domain name to replace the load balancer domain name. (HTTP)
     - Register an SSL Certificate to make the website secure. (HTTPS)
 
 
-## [10 - SSH Into an EC2 Instance in the Private Subnet](10-SSH-Into-an-EC2-Instance-in-the-Private-Subnet/Readme.md)
+## [10 - SSH Into an EC2 Instance in the Private Subnet](https://github.com/victorwokili/AWS-Advanced/tree/main/Host-a-Dynamic-Web-Application-on-AWS/10-SSH-Into-an-EC2-Instance-in-the-Private-Subnet)
 
 We will:
 
@@ -102,7 +102,7 @@ We will:
     
 
 
-## [11 - Create an Auto Scaling Group](11-Create-an-Auto-Scaling-Group/Readme.md)
+## [11 - Create an Auto Scaling Group](https://github.com/victorwokili/AWS-Advanced/tree/main/Host-a-Dynamic-Web-Application-on-AWS/11-Create-an-Auto-Scaling-Group)
 
 
 
