@@ -1,0 +1,17 @@
+.gradle
+*.ipr
+*.iws
+*.iml
+atlassian*.xml
+maven-examples/**/target
+gradle-examples/**/build
+_ReSharper*
+bin
+obj
+*.suo
+*.user
+packages
+*.tmp
+.idea
+.DS_Store
+node_modules
