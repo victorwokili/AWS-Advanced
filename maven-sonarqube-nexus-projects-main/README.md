@@ -40,7 +40,7 @@
     - Instance type: t2.medium
     - Security Group (Open): 8081 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
-    - User data (Copy the following user data): https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/maven-sonarqube-nexus-jenkins-install/nexus-install.sh
+    - User data (Copy the following user data): https://github.com/victorwokili/AWS-Advanced/blob/main/maven-sonarqube-nexus-projects-main/user-data-for-nexus-ec2-instance.sh
     - Launch Instance
 
 ## Configure Nexus Repository
