@@ -32,7 +32,7 @@
     - Instance type: t2.micro
     - Security Group (Open): 22 to 0.0.0.0/0 or Your-IP
     - Key pair: Select or create a new keypair
-    - User data (Copy the following user data): https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/maven-sonarqube-nexus-jenkins-install/maven-install.md
+    - User data (Copy the following user data): https://github.com/victorwokili/AWS-Advanced/blob/main/maven-sonarqube-nexus-projects-main/user-data-for-maven-ec2-instance.sh
     - Launch Instance
 
 4) Nexus
