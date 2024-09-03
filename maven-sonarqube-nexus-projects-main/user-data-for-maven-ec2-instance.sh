@@ -12,4 +12,4 @@ source .bash_profile
 mvn -v
 
 ## Install Git SCM
-yum install git -y
+sudo yum install git -y
